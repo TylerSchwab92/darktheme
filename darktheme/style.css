@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+
+}
+
+img{
+    width:100%;
+}
+
+
+
+body {
+    
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+
+}
+
+
+
+
+/*______________________________ Header __________________________________*/
+nav {
+    display: flex;
+    margin: 1em auto;
+    justify-content: space-between;
+    width: 90%;
+}
+
+nav>ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li {}
+
+
+@media screen and (min-width: 800px) {}
+
+
+/*______________________________ Section 1 ________________________________*/
+
+.section-1 {
+
+
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+
+}
+
+.section1-button {
+    margin-top: 4em;
+    color: white;
+    background: hsl(198, 60%, 50%);
+    border-radius: 3em;
+    width:20em;
+    padding:1em;
+    font-size: 16px;
+
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+    .section-1 {
+        width: 40%;
+
+
+    }
+}
+
+
+/*______________________________ Section 2 ________________________________*/
+
+.section-2 {
+   
+    margin-top: 10em;
+}
+
+/* .secton-2_block-1 */
+.block-1,
+.block-2,
+.block-3,
+.block-4 {
+    flex-basis: 75%;
+    text-align: center;
+    margin: 5em 0;
+    
+}
+
+.block>p {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.block>img {
+    
+    width: 10em;
+}
+
+
+
+/* .secton-2_block-1 */
+
+@media (max-width: 800px) {
+
+    .section-2 {
+       
+        margin:0 auto;
+        
+        
+        
+    }
+        
+    }
+
+
+
+
+@media screen and (min-width: 800px) {
+    .section-2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .block-1,
+    .block-2,
+    .block-3,
+    .block-4 {
+        flex-basis: 40%;
+        text-align: center;
+        margin: 2em 0;
+
+
+    }
+
+    .block-1>p,
+    .block-2>p,
+    .block-3>p,
+    .block-4>p {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+}
+
+/*______________________________ Section 3 ________________________________*/
+
+.section-3 {
+    margin: 0 auto;
+    max-width: 90%;
+    margin-top: 10em;
+    text-align: center;
+
+}
+
+.section-3 p,.section-3 h2 {
+    text-align: left;
+}
+
+.section-3-image  {
+    max-width: 500px;
+    flex-basis: 40%;
+}
+
+.section-3-side {
+   
+    font-size: 25px;
+   line-height: 2em;
+   flex-basis: 40%;
+    
+    
+
+}
+
+.arrow-icon {
+    width: 1em;
+}
+
+
+@media screen and (min-width: 800px) {
+
+    .section-3 {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+
+
+/*______________________________ Section 4 ________________________________*/
+.section-4 {
+    margin-top: 10em;
+}
+.section-4_info-card{
+    width:80%;
+    margin:3em auto;
+    background-color: hsl(219, 30%, 18%);
+    padding: 1.5%;
+}
+.section-4_pic {
+    border-radius: 5em;
+    height: 3em;
+    width:3em;
+}
+.section-4_quote-img {
+    margin-top: 7em;
+    margin-left: 6em;
+    position: absolute;
+    width: 5em;
+    z-index: -1;
+}
+@media screen and (min-width: 800px) {
+    .section-4  {
+        display: flex;
+        align-items: center;
+        width:80%;
+        margin:7em auto;
+    }
+    .section-4_info-card {
+       margin-right:1em;
+    }
+    .section-4_quote-img  {
+        position:absolute;
+        z-index: -1;
+    }
+}
+
+/*______________________________ Section 5 ________________________________*/
+.section-5 {
+    position: relative;
+    padding:2.5em 3em;
+    margin:0 auto;
+    max-width: 50%;
+    background-color: hsl(219, 30%, 18%);
+    text-align: center;
+}
+.section-5 > h2 {
+    margin: 0;
+}
+.section-5_form {
+    padding-top: 1em;
+}
+.section-5_form input {
+    border-radius: 3em;
+    padding: 1.5em 2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+.section-5_form-child {
+    flex-basis: 45%;
+}
+.section-5-button {
+    color: white;
+    background: hsl(198, 60%, 50%);
+    border-radius: 3em;
+    padding:1em 1.25em;
+    font-size: 16px;
+}
+@media screen and (min-width: 800px) {
+    .section-5_form {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: stretch; */
+    }
+    .section-5_form input {
+        margin-bottom: 0 ;
+        text-align: left;
+    }
+}
+
+/*______________________________ Footer ________________________________*/
+footer {
+    margin-top: -8em;
+    background-color: hsl(216, 53%, 9%);
+    padding-top: 10em;
+    
+}
+.footer_logo-container{
+    padding-bottom: 5em;
+}
+
+.footer_logo-img {
+    display: block;
+    width: 16em;
+    margin-bottom: 5%;
+
+}
+
+.footer-content {
+    
+}
+
+ul  {
+
+    list-style: none;
+}
+.footer_icon {
+    width: 2em;
+}
+
+
+
+@media screen and (min-width: 800px) {
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+
+    
+}
